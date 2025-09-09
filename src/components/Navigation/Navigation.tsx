@@ -1,4 +1,6 @@
 import {FC} from 'react';
+import Logo from '@/components/Navigation/Logo/Logo';
+import MenuContainer from '@/components/Navigation/MenuContainer/MenuContainer';
 
 interface NavigationProps {
     className?: string;
@@ -7,7 +9,8 @@ interface NavigationProps {
 const Navigation: FC<NavigationProps> = ({className}) => {
     return (
         <div className={className}>
-            Navigation
+            <Logo/>
+            <MenuContainer/>
         </div>
     );
 };
