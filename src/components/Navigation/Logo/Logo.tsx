@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Logo: FC = () => {
     return (
         <Link href={'/'}>
-            <Image src={'/logo.svg'} alt={'Изображение логотипа'} width={247} height={34} draggable={false}/>
+            <Image src={'/logo.svg'} alt={'Изображение логотипа'} width={247} height={34} draggable={false} priority fetchPriority={'high'}/>
         </Link>
     );
 };

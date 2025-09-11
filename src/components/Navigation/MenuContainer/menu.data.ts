@@ -1,4 +1,4 @@
-import {IMenu} from '@/components/Navigation/MenuContainer/MenuItem';
+import {IMenu} from '@/components/Navigation/MenuContainer/MenuItem/MenuItem';
 
 export const firstMenu: IMenu = {
     title: 'Menu',
@@ -11,17 +11,17 @@ export const firstMenu: IMenu = {
         {
             icon: 'MdExplore',
             title: 'Discovery',
-            link: '/genres'
+            link: 'genres/'
         },
         {
             icon: 'MdRefresh',
             title: 'FreshMovies',
-            link: '/fresh'
+            link: 'fresh/'
         },
         {
             icon: 'MdLocalFireDepartment',
             title: 'Trending now',
-            link: '/trending'
+            link: 'trending/'
         }
     ]
 };
@@ -30,5 +30,3 @@ export const userMenu: IMenu = {
     title: 'General',
     items: []
 };
-
-export const menus: IMenu[] = [firstMenu, userMenu];
